@@ -1,0 +1,8 @@
+{
+    "identifier": "software.satori.ElixirClips",
+    "name": "Elixir Clips",
+    "organization": "Satori Software LLC",
+    "description": "Lorem ipsum, dolor sit amet.",
+    "version": "1.0",
+    "categories": ["clips"]
+}
