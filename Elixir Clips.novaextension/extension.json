@@ -2,7 +2,10 @@
     "identifier": "software.satori.ElixirClips",
     "name": "Elixir Clips",
     "organization": "Satori Software LLC",
-    "description": "Lorem ipsum, dolor sit amet.",
+    "description": "A collection of Elixir code clips",
     "version": "1.0",
-    "categories": ["clips"]
+    "categories": ["clips"],
+    "license":"MIT",
+    "repository": "https://github.com/mratliff/nova-elixir-clips",
+    "bugs": "https://github.com/mratliff/nova-elixir-clips/issues"
 }

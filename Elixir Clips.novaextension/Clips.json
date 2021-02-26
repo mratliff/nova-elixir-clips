@@ -1,20 +1,310 @@
 {
   "clips" : [
     {
-      "content" : "$AUTHOR_NAME",
-      "name" : "User Signature",
-      "trigger" : "usersig"
-    },
-    {
-      "name" : "Group Name",
+      "name" : "Core Elixir",
       "children" : [
         {
-          "content" : "console.log(${:message})",
-          "name" : "Console Log",
+          "content" : "case ${1} do\n  ${2} ->\n    ${3}\nend\n",
+          "name" : "Case",
           "scope" : "editor",
-          "shortcut" : "cmd-alt-shift-l",
-          "syntax" : "javascript",
-          "trigger" : "log"
+          "syntax" : "elixir",
+          "trigger" : "case"
+        },
+        {
+          "content" : "cond do\n  ${1} ->\nend\n",
+          "name" : "Cond",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "cond"
+        },
+        {
+          "content" : "def ${0} do\n\t${1}\nend\n",
+          "name" : "def",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "def"
+        },
+        {
+          "content" : "defp ${0} do\n\t${1}\nend\n",
+          "name" : "defp",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "defp"
+        },
+        {
+          "content" : "def ${0}, do: ${1}\n",
+          "name" : "def (one line)",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "df"
+        },
+        {
+          "content" : "defcallback ${0} :: ${1}\n",
+          "name" : "defcallback",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "defc"
+        },
+        {
+          "content" : "defdelegate ${0} to: ${1}\n",
+          "name" : "defdelegate",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "defd"
+        },
+        {
+          "content" : "defexception [${0:message}]\n",
+          "name" : "defexception",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "defe"
+        },
+        {
+          "content" : "defimpl ${0}, for: $1 do\n\t $2\nend\n",
+          "name" : "defimpl",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "defi"
+        },
+        {
+          "content" : "defmacro ${0}, for: ${1} do\n\t ${2}\nend\n",
+          "name" : "defimpl",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "dmac"
+        },
+        {
+          "content" : "defprotocol ${0} do\n\t${1}\nend\n",
+          "name" : "defprotocol",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "defpro"
+        },
+        {
+          "content" : "defstruct ${0}: ${1}\n",
+          "name" : "defstruct",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "defs"
+        },
+        {
+          "content" : "do\n\t${0}\nend\n",
+          "name" : "do",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "do"
+        },
+        {
+          "content" : "@doc \"\"\"\n${0}\n\"\"\"\n",
+          "name" : "doc",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "doc"
+        },
+        {
+          "content" : "fn ${0:args} -> ${1} end\n",
+          "name" : "fn",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "fn"
+        },
+        {
+          "content" : "for ${0:item} <- ${1:items} do:\n\t${3}\nend\n",
+          "name" : "for",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "for"
+        },
+        {
+          "content" : "for ${0:item} <- ${1:items}, into: ${2:[]} do:\n\t${3}\nend\n",
+          "name" : "for into",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "fori"
+        },
+        {
+          "content" : "if ${0} do\n\t${1}\nelse\n\t${2}\nend\n",
+          "name" : "if else",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "ife"
+        },
+        {
+          "content" : "if ${0} do\n\t${1}\nend\n",
+          "name" : "if",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "if"
+        },
+        {
+          "content" : "IO.inspect($0)",
+          "name" : "IO.inspect",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "ii"
+        },
+        {
+          "content" : "IO.inspect($0, limit: :infinity)",
+          "name" : "IO.inspect limit infinity",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "iin"
+        },
+        {
+          "content" : "IO.puts(\"$0\")",
+          "name" : "IO.puts(..)",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "ip"
+        },
+        {
+          "content" : "${0:key} => ${1:value}${2}",
+          "name" : "key => value",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "::"
+        },
+        {
+          "content" : "@moduledoc \"\"\"\n${0}\n\"\"\"",
+          "name" : "moduledoc",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "mdoc"
+        },
+        {
+          "content" : "|> ${0}",
+          "name" : "pipe",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "p"
+        },
+        {
+          "content" : "defmodule ${0:moduleName} do\n\tuse Supervisor\n\n\tdef start_link(${1:args}) do\n\t\tSupervisor.start_link(__MODULE__, ${2:args}, name: __MODULE__)\n\tend\n\n\tdef init(${3:args}) do\n\t\tchildren = []\n\n\t\tSupervisor.init(children, strategy: :one_for_one)\n\tend\nend",
+          "name" : "Supervisor",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "sup"
+        }
+      ]
+    },
+    {
+      "name" : "LiveView",
+      "children" : [
+        {
+          "content" : "def haandle_event(${1:event}, _, socket) do\n\tsocket = assign(socket, ${2:key}, ${3:value})\n\t{:noreply, socket}\nend",
+          "name" : "Handle Event",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "he"
+        },
+        {
+          "content" : "def haandle_info(${1:event}, socket) do\n\tsocket = assign(socket, ${2:key}, ${3:value})\n\t{:noreply, socket}\nend",
+          "name" : "Handle Event",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "hi"
+        },
+        {
+          "content" : "defmodule ${WORKSPACE_NAME}Web.${0:ModuleName}Test do\n\tuse ${WORKSPACE_NAME}Web.ConnCase\n\n\timport Phoenix.LiveViewTest\n\n\ttest \"${1:test description}\", %{conn: conn} do\n\t\t${2}\n\tend\nend",
+          "name" : "LiveView Test",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "lvt"
+        },
+        {
+          "content" : "defmodule ${WORKSPACE_NAME}Web.${0:ModuleName}Live do\n\tuse ${WORKSPACE_NAME}Web, :live_view\n\n\t${1}\nend",
+          "name" : "LiveView Module",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "lvm"
+        },
+        {
+          "content" : "def mount(_params, _session, socket) do\n\tsocket = assign(socket, ${0:key}, ${1:value}\n\t{:ok, socket}\nend",
+          "name" : "LiveView Mount",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "mount"
+        },
+        {
+          "content" : "def render(assigns) do\n\t~L\"\"\"\n\t${0}\n\t\"\"\"\nend",
+          "name" : "LiveView Render",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "render"
+        },
+        {
+          "content" : "require IEx; IEx.pry",
+          "name" : "Pry",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "pry"
+        },
+        {
+          "content" : "__MODULE__",
+          "name" : "__MODULE__",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "_M"
+        },
+        {
+          "content" : "def init(args) do\n\t${0}\nend",
+          "name" : "Add init",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "init"
+        },
+        {
+          "content" : "def start_link(args) do\n\t${0}\nend",
+          "name" : "Add start_link",
+          "scope" : "editor",
+          "syntax" : "elixir",
+          "trigger" : "sl"
+        }
+      ]
+    },
+    {
+      "name" : "EEx",
+      "children" : [
+        {
+          "content" : "<%= ${0} %>",
+          "name" : "Embed Elixir",
+          "scope" : "editor",
+          "syntax" : "html+eex",
+          "trigger" : "ee"
+        },{
+          "content" : "<%= for ${0:item} <- @${0:items}s do %>\n\t$1\n<% end %>",
+          "name" : "EEX For Comprehension",
+          "scope" : "editor",
+          "syntax" : "html+eex",
+          "trigger" : "for"
+        },
+        {
+          "content" : "<%= if $0 do %>\n\t$1\n<% end %>",
+          "name" : "EEx if",
+          "scope" : "editor",
+          "syntax" : "html+eex",
+          "trigger" : "if"
+        },
+        {
+          "content" : "<% else %>",
+          "name" : "EEx Else",
+          "scope" : "editor",
+          "syntax" : "html+eex",
+          "trigger" : "else"
+        },
+        {
+          "content" : "<% end %>",
+          "name" : "EEx End",
+          "scope" : "editor",
+          "syntax" : "html+eex",
+          "trigger" : "end"
+        },
+        {
+          "content" : "<%= cond do %>\n\t<% $0 -> %>\n\t\t$1\n\t<% true ->\n\t\t$2\n<% end %>",
+          "name" : "EEx Cond",
+          "scope" : "editor",
+          "syntax" : "html+eex",
+          "trigger" : "cond"
         }
       ]
     }
