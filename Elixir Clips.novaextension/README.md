@@ -1,4 +1,4 @@
-#Elixir Clips for Nova
+# Elixir Clips for Nova
 
 ## Description
 This extension for Nova provides code clips covering core Elixir constructs, LiveView, Testing and OTP"
