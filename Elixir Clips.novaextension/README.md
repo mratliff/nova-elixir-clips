@@ -7,57 +7,57 @@ This extension for Nova provides code clips covering core Elixir constructs, Liv
 
 ### Core Elixir Clips
 
-| Trigger    | Description                           
-| case→      | case statement
-| cond→      | cond statement
-| def→       | def (multi-line)
-| df→        | def (one-line)
-| depf→      | defp
-| defc→      | defcallback
-| defd→      | defdelegate
-| defe→      | defexception
-| defi→      | defimpl
-| dmac→      | defmacro
-| defpro→    | defprotocol
-| defs→      | defstruct
-| do→        | do block
-| doc→       | @doc
-| fn→        | fn args -> end
-| for→       | for item <- items do: end
-| fori→      | for item <- items, into: [] do: end
-| ife→       | if else end
-| if→        | if end
-| ii→        | IO.inspect()
-| iin→       | IO.inspect( limit: infinity)
-| ip→        | IO.puts("")
-| ::→        | key => value
-| mdoc→      | @moduledoc """ """
-| p→         | |>
-| pry→       | require IEx; IEx.pry
-| _M→        | __MODULE__
+| Trigger    | Description|                     
+| case→      | case statement|
+| cond→      | cond statement|
+| def→       | def (multi-line)|
+| df→        | def (one-line)|
+| depf→      | defp|
+| defc→      | defcallback|
+| defd→      | defdelegate|
+| defe→      | defexception|
+| defi→      | defimpl|
+| dmac→      | defmacro|
+| defpro→    | defprotocol|
+| defs→      | defstruct|
+| do→        | do block|
+| doc→       | @doc|
+| fn→        | fn args -> end|
+| for→       | for item <- items do: end|
+| fori→      | for item <- items, into: [] do: end|
+| ife→       | if else end|
+| if→        | if end|
+| ii→        | IO.inspect()|
+| iin→       | IO.inspect( limit: infinity)|
+| ip→        | IO.puts("")|
+| ::→        | key => value|
+| mdoc→      | @moduledoc """ """|
+| p→         | |>|
+| pry→       | require IEx; IEx.pry|
+| _M→        | __MODULE__|
 
 ### LiveView Clips
-| Trigger    | Description                           
-| he→        | def handle_event
-| hi→        | def handle_info
-| lvm→       | defmodule Live
-| lvt→       | defmodule LiveTest
-| mount→     | def mount()
-| render→    | def render()
+| Trigger    | Description|
+| he→        | def handle_event|
+| hi→        | def handle_info|
+| lvm→       | defmodule Live|
+| lvt→       | defmodule LiveTest|
+| mount→     | def mount()|
+| render→    | def render()|
 
 ### OTP Clips
-| Trigger    | Description                           
-| init→      | def init()
-| sl→        | def start_link()
+| Trigger    | Description|                      
+| init→      | def init()|
+| sl→        | def start_link()|
 
 ### EEx Clips
-| Trigger    | Description                           
-| ee→        | <%= %>
-| for→       | for comprehension in eex
-| if→        | if in eex
-| else→      | <% else %>
-| end→       | <% end %>
-| cond→      | cond in eex
+| Trigger    | Description|
+| ee→        | <%= %>|
+| for→       | for comprehension in eex|
+| if→        | if in eex|
+| else→      | <% else %>|
+| end→       | <% end %>|
+| cond→      | cond in eex|
 
 ## Acknowledgements
 
