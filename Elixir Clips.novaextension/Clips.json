@@ -191,7 +191,7 @@
       "name" : "LiveView",
       "children" : [
         {
-          "content" : "def haandle_event(${1:event}, _, socket) do\n\tsocket = assign(socket, ${2:key}, ${3:value})\n\t{:noreply, socket}\nend",
+          "content" : "def handle_event(${1:event}, ${2:params}, socket) do\n\tsocket = assign(socket, ${3:key}, ${4:value})\n\t{:noreply, socket}\nend",
           "name" : "Handle Event",
           "scope" : "editor",
           "syntax" : "elixir",

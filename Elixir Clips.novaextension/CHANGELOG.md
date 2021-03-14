@@ -1,3 +1,6 @@
+## Version 1.0.3
+Fixes LiveView HandleEvent syntax
+
 ## Version 1.0.2
 Update png inside extension
 
