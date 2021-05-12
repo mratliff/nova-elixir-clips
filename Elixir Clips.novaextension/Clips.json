@@ -269,41 +269,41 @@
           "content" : "<%= ${0} %>",
           "name" : "Embed Elixir",
           "scope" : "editor",
-          "syntax" : "html+eex",
+          "syntax" : ["html+eex", "html"],
           "trigger" : "ee"
         },{
           "content" : "<%= for ${0:item} <- @${0:items}s do %>\n\t$1\n<% end %>",
           "name" : "EEX For Comprehension",
           "scope" : "editor",
-          "syntax" : "html+eex",
+          "syntax" : ["html+eex", "html"],
           "trigger" : "for"
         },
         {
           "content" : "<%= if $0 do %>\n\t$1\n<% end %>",
           "name" : "EEx if",
           "scope" : "editor",
-          "syntax" : "html+eex",
+          "syntax" : ["html+eex", "html"],
           "trigger" : "if"
         },
         {
           "content" : "<% else %>",
           "name" : "EEx Else",
           "scope" : "editor",
-          "syntax" : "html+eex",
+          "syntax" : ["html+eex", "html"],
           "trigger" : "else"
         },
         {
           "content" : "<% end %>",
           "name" : "EEx End",
           "scope" : "editor",
-          "syntax" : "html+eex",
+          "syntax" : ["html+eex", "html"],
           "trigger" : "end"
         },
         {
           "content" : "<%= cond do %>\n\t<% $0 -> %>\n\t\t$1\n\t<% true ->\n\t\t$2\n<% end %>",
           "name" : "EEx Cond",
           "scope" : "editor",
-          "syntax" : "html+eex",
+          "syntax" : ["html+eex", "html"],
           "trigger" : "cond"
         }
       ]
